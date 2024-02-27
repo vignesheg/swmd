@@ -11,10 +11,10 @@
     <script type="module" src="index.js"></script>
 </head>
 
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center">Smart Menstural Waste Disposer</h1>
-        <table class="table table-striped m-3">
+<body class="bg-dark">
+    <div class="container mt-5 rounded-3" style="box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.2), 0 6px 20px 0 rgba(110, 110, 110, 0.19);">
+        <h1 class="text-center text-white">Smart Menstural Waste Disposer</h1>
+        <table class="table table-striped m-3 rounded-3">
             <thead>
                 <tr>
                     <th class="text-center fs-2">Sensor</th>
@@ -22,70 +22,54 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="text-center">MQ135 First Value(Air quality)</td class="text-center">
+                
+                <tr class="table-dark">
+                    <td class="text-center">MQ135(Air Quality)</td>
+                    <td class="text-center">
+                        <p id="Mq135"></p>
+                    </td>
+                </tr>
+                <tr class="table-dark">
+                    <td class="text-center">MQ2(Smog)</td>
+                    <td class="text-center">
+                        <p id="Mq2"></p>
+                    </td>
+                </tr>
+                
+                <tr class="table-dark">
+                    <td class="text-center">MQ135 First Value(Air quality)</td>
 
                     <td class="text-center">
                         <p id="firstMq135"></p>
-                    </td class="text-center">
+                    </td>
                 </tr>
-                <tr>
-                    <td class="text-center">MQ2 First Value</td class="text-center">
+                <tr class="table-secondary">
+                    <td class="text-center">MQ2 First Value(smog)</td>
                     <td class="text-center">
                         <p id="firstMq2"></p>
-                    </td class="text-center">
-                </tr>
-                <tr>
-                    <td class="text-center">MQ4 First Value</td class="text-center">
-                    <td class="text-center">
-                        <p id="firstMq4"></p>
-                    </td class="text-center">
+                    </td>
                 </tr>
                 
-                <tr>
-                    <td class="text-center">MQ135 last value(Air quality)</td class="text-center">
-                    <td class="text-center"> <p id="lastMq135"></p></td class="text-center">
+                <tr class="table-secondary">
+                    <td class="text-center">MQ135 last value(Air quality)</td>
+                    <td class="text-center"> <p id="lastMq135"></p></td>
                 </tr>
-                <tr>
-                    <td class="text-center">MQ2 last value</td class="text-center">
-                    <td class="text-center"> <p id="lastMq2"></p></td class="text-center">
+                <tr class="table-secondary">
+                    <td class="text-center">MQ2 last value(Smog)</td>
+                    <td class="text-center"> <p id="lastMq2"></p></td>
                 </tr>
-                <tr>
-                    <td class="text-center">MQ4 last value</td class="text-center">
-                    <td class="text-center"> <p id="lastMq4"></p></td class="text-center">
-                </tr>
+               
                 
-                <tr>
-                    <td class="text-center">MQ135(Air Quality)</td class="text-center">
-                    <td class="text-center">
-                        <p id="Mq135"></p>
-                    </td class="text-center">
-                </tr>
-                <tr>
-                    <td class="text-center">MQ2</td class="text-center">
-                    <td class="text-center">
-                        <p id="Mq2"></p>
-                    </td class="text-center">
-                </tr>
-                <tr>
-                    <td class="text-center">MQ4</td class="text-center">
-                    <td class="text-center">
-                        <p id="Mq4"></p>
-                    </td class="text-center">
-                </tr>
              
-                <tr>
-                    <td class="text-center">Air Quality</td class="text-center">
-                    <td class="text-center"> <p id="resultMq135"></p></td class="text-center">
+                <tr class="table-dark">
+                    <td class="text-center">Air Quality</td>
+                    <td class="text-center"> <p id="resultMq135"></p></td>
                 </tr>
-                <tr>
-                    <td class="text-center">Result Mq2</td class="text-center">
-                    <td class="text-center"> <p id="resultMq2"></p></td class="text-center">
+                <tr class="table-dark">
+                    <td class="text-center">SMOG</td>
+                    <td class="text-center"> <p id="resultMq2"></p></td>
                 </tr>
-                <tr>
-                    <td class="text-center">Result Mq4</td class="text-center">
-                    <td class="text-center"> <p id="resultMq4"></p></td class="text-center">
-                </tr>
+            
                
             </tbody>
         </table>

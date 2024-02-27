@@ -68,6 +68,10 @@ const RESULT_MQ6 = ref(database,"RESULT_MQ6");
     replaceTagVal(val,'firstMq4');
 });
 
+  onValue(FIRST_MQ6,(getval)=>{
+ const val = getval.val();
+    replaceTagVal(val,'firstMq6');
+});
 
   onValue(LAST_MQ135,(getval)=>{
  const val = getval.val();
@@ -84,7 +88,10 @@ const RESULT_MQ6 = ref(database,"RESULT_MQ6");
     replaceTagVal(val,'lastMq4');
 });
 
- 
+  onValue(LAST_MQ6,(getval)=>{
+ const val = getval.val();
+    replaceTagVal(val,'lastMq6');
+});
 
   onValue(MQ135,(getval)=>{
  const val = getval.val();
@@ -101,7 +108,10 @@ const RESULT_MQ6 = ref(database,"RESULT_MQ6");
     replaceTagVal(val,'Mq4');
 });
 
- 
+  onValue(MQ6,(getval)=>{
+ const val = getval.val();
+    replaceTagVal(val,'Mq6');
+});
 
   onValue(RESULT_MQ135,(getval)=>{
  const val = getval.val();
@@ -118,6 +128,10 @@ const RESULT_MQ6 = ref(database,"RESULT_MQ6");
     replaceTagVal(val,'resultMq4');
 });
 
+  onValue(RESULT_MQ6,(getval)=>{
+ const val = getval.val();
+    replaceTagVal(val,'resultMq6');
+});
 
 function replaceTagVal(value,id){
     document.getElementById(id).innerHTML = value;
